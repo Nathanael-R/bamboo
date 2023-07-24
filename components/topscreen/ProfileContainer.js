@@ -13,7 +13,6 @@ const ProfileContainer = () => {
         paddingTop: StatusBar.currentHeight || 0,
       }}
     >
-      <Profile />
       <PrimaryCard />
     </View>
   );

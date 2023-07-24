@@ -1,17 +1,12 @@
-import { StyleSheet, Text, View, SafeAreaView} from 'react-native';
-import Portfolio from './components/Portfolio';
+
+import { NavigationContainer } from "@react-navigation/native";
+import Tabs from "./components/Tab";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Portfolio />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Tabs />
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-});

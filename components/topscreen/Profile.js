@@ -7,7 +7,7 @@ const Profile = () => {
       <Text style={{ color: "white", fontSize: 16, fontWeight: "bold" }}>
         Hello Nathanael,
       </Text>
-      <View style={{ display: "flex", flexDirection: "row", gap: 15 }}>
+      <View style={{ flexDirection: "row", gap: 15, position: 'absolute', right: 0 }}>
         <Ionicons name="ios-search" size={24} color="white" />
         <Ionicons name="notifications" size={24} color="white" />
       </View>
@@ -16,11 +16,8 @@ const Profile = () => {
 };
 const styles = StyleSheet.create({
   profile: {
-    display: "flex",
     flexDirection: "row",
-    justifyContent: "space-between",
-    paddingRight: 30,
-    marginBottom: 20,
+    postion: 'relative'
   },
 })
 export default Profile;

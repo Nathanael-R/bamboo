@@ -65,6 +65,7 @@ const WatchList = () => {
           renderItem={({ item }) => <OnComponent item={item} />}
           numColumns={1}
           horizontal
+          showsHorizontalScrollIndicator={false}
           pagingEnabled
           bounces={false}
           keyExtractor={(item) => item.id}
