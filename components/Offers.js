@@ -1,11 +1,14 @@
+import { Dimensions, Text, View } from "react-native";
+
 const Offers = () => {
+  let secondaryCardWidth = Dimensions.get('window').width - 55
   return (
     <View style={{ paddingTop: 20 }}>
       <Text style={{ marginBottom: 15 }}>Special Offers</Text>
       <View
         style={{
           backgroundColor: "#acb0f7",
-          width: 330,
+          width: (secondaryCardWidth),
           borderRadius: 5,
           padding: 15,
         }}
@@ -20,4 +23,4 @@ const Offers = () => {
   );
 };
 
-export default Offers
+export default Offers;
