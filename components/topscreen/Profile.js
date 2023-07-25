@@ -17,7 +17,8 @@ const Profile = () => {
 const styles = StyleSheet.create({
   profile: {
     flexDirection: "row",
-    postion: 'relative'
+    postion: 'relative',
+    flex: 1
   },
 })
 export default Profile;

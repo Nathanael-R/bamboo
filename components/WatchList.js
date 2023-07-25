@@ -12,7 +12,6 @@ import { Themes } from "./utils/helper";
 import { useState, useRef } from "react";
 import Paginator from "./Paginator";
 
-
 const WatchList = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -46,7 +45,7 @@ const WatchList = () => {
     );
   };
   return (
-    <View style={{ paddingTop: 30, paddingRight: 15}}>
+    <View style={{ paddingTop: 30, paddingRight: 15 }}>
       <View
         style={{
           display: "flex",
@@ -59,7 +58,14 @@ const WatchList = () => {
           <Text>See All</Text>
         </Pressable>
       </View>
-      <View style={{ flex: 3, alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+      <View
+        style={{
+          flex: 3,
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 10,
+        }}
+      >
         <FlatList
           data={Themes}
           renderItem={({ item }) => <OnComponent item={item} />}
@@ -81,9 +87,10 @@ const WatchList = () => {
           ref={slidesRef}
           scrollEnabled={true}
         />
-      <Paginator data={Themes} scrollX={scrollX}/>
+        <Paginator data={Themes} scrollX={scrollX} />
       </View>
     </View>
-  );};
+  );
+};
 
 export default WatchList;

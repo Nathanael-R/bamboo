@@ -1,11 +1,14 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
+import Wallet from '../components/account/Wallet'
+import Payment from '../components/account/Payment'
 
 const Account = () => {
   return (
-    <View>
-      <Text>Account</Text>
-    </View>
+    <ScrollView style={{ paddingHorizontal: 15 }}>
+      <Wallet />
+      <Payment />
+    </ScrollView>
   )
 }
 
