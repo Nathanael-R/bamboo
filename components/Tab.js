@@ -120,6 +120,7 @@ const Tabs = () => {
         tabBarInactiveTintColor: "grey",
         tabBarStyle: {
           backgroundColor: "white",
+          borderTopWidth: 0
         },
         headerStyle: {
           backgroundColor: "#00D084",
