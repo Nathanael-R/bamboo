@@ -1,8 +1,9 @@
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { Image, Pressable, Text, View } from "react-native";
+ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const List = () => {
+const List = ({screenName, navigation}) => {
   return (
     <View
       style={{
@@ -11,6 +12,7 @@ const List = () => {
         justifyContent: "space-between",
         alignItems: "center",
       }}
+      onPress={() => navigation.navigate(screenName)}
     >
       <View
         style={{

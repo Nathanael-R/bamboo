@@ -3,7 +3,7 @@ import { Ionicons, Octicons } from "@expo/vector-icons";
 import React from "react";
 import Home from "../screens/Home";
 import Account from "../screens/Account";
-//import Help from "../screens/Help";
+import Help from "../screens/Help";
 import Learn from "../screens/Learn";
 import Invest from "../screens/Invest";
 import Profile from "./topscreen/Profile";
@@ -124,6 +124,7 @@ const Tabs = () => {
         },
         headerStyle: {
           backgroundColor: "#00D084",
+          borderBottomWidth: 0
         },
         headerTitleStyle: {
           fontWeight: "bold",
@@ -132,7 +133,7 @@ const Tabs = () => {
         },
       }}
     >
-      {/* <Tab.Screen
+      <Tab.Screen
         name={"Home"}
         component={Home}
         options={{
@@ -145,8 +146,8 @@ const Tabs = () => {
           ),
           headerTitle: (props) => <Profile {...props}/>
         }}
-      /> */}
-      {/* <Tab.Screen
+      />
+      <Tab.Screen
         name={"Invest"}
         component={Invest}
         options={{
@@ -158,8 +159,8 @@ const Tabs = () => {
             />
           ),
         }}
-      /> */}
-      {/* <Tab.Screen
+      />
+      <Tab.Screen
         name={"Learn"}
         component={Learn}
         options={{
@@ -171,8 +172,8 @@ const Tabs = () => {
         B    />
           ),
         }}
-      /> */}
-      {/* <Tab.Screen
+      />
+      <Tab.Screen
         name={"Help"}
         component={Help}
         options={{
@@ -185,7 +186,7 @@ const Tabs = () => {
             />
           ),
         }}
-      /> */}
+      />
       <Tab.Screen
         name={"Account"}
         component={Account}
@@ -199,7 +200,8 @@ const Tabs = () => {
           ),
           headerTitle: (props) => <AccountContainer {...props} />,
         }}
-      />
+        />
+        <Tab.Screen name='Modal' component={Modal} screenOptions={{presentation: 'modal'}}/>
     </Tab.Navigator>
   );
 };

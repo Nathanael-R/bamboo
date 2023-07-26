@@ -8,6 +8,9 @@ import TopMovers from "../components/TopMovers";
 import MonthStock from "../components/stocks/MonthStock";
 import FeaturedStocks from "../components/FeaturedStocks";
 import RecentNews from "../components/RecentNews";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const NewCom = createNativeStackNavigator()
 const Contain = () => {
   return (
     <View style={{ paddingLeft: 15 }}>

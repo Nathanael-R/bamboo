@@ -1,24 +1,21 @@
-import { View, Text, ScrollView } from "react-native";
-import React from "react";
-import { ThemeScroll } from "../components/FeaturedThemes";
-import Search from "../components/invest/Search";
-import List from "../components/cards/List";
+import * as React from "react";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import Returns from "../components/invest/Returns";
+import Stocks from "../components/invest/Stocks";
 
+const Tab = createMaterialTopTabNavigator();
 const Invest = () => {
   return (
-    <ScrollView
-      style={{
-        paddingHorizontal: 15,
-        backgroundColor: "white",
+    <Tab.Navigator
+      screenOptions={{
+        tabBarLabelStyle: { fontSize: 12, color: 'white', fontWeight: 'bold', },
+        tabBarStyle: { backgroundColor:  "#00D084"},
+        tabBarIndicatorStyle: {backgroundColor: 'white'}
       }}
     >
-      <View>
-        <Search />
-        <ThemeScroll />
-      </View>
-      <Text style={{fontWeight: 'bold'}}>Featured Stocks</Text>
-      <List />
-    </ScrollView>
+      <Tab.Screen name="Stocks" component={Stocks} />
+      <Tab.Screen name="Returns" component={Returns} />
+    </Tab.Navigator>
   );
 };
 
