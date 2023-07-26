@@ -6,7 +6,7 @@ import Payment from '../components/account/Payment'
 const Account = () => {
   return (
     <ScrollView style={{ paddingHorizontal: 15, backgroundColor: 'white' }}>
-      <Wallet />
+      {/* <Wallet /> */}
       <Payment />
     </ScrollView>
   )
