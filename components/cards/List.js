@@ -1,18 +1,19 @@
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { Image, Pressable, Text, View } from "react-native";
- import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-const List = ({screenName, navigation}) => {
+import {useNavigation} from '@react-navigation/native'
+import { TouchableOpacity } from "react-native";
+const List = ({Details}) => {
+  const navigation = useNavigation()
   return (
-    <View
+    <TouchableOpacity
       style={{
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
       }}
-      onPress={() => navigation.navigate(screenName)}
+      onPress={() => navigation.navigate(Details)}
     >
       <View
         style={{
@@ -60,7 +61,7 @@ const List = ({screenName, navigation}) => {
           <Ionicons name="options" size={24} color="#00D084" />
         </Pressable>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
