@@ -7,7 +7,7 @@ const MyStocks = () => {
       style={{ paddingTop: 30, paddingRight: 15}}
     >
       <Header title='My Stocks'/>
-      <List />
+      <List Details={'Details'}/>
     </View>
   );
 };

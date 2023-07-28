@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "bamboo",
-    "slug": "bamboo",
+    "slug": "bamboo-clone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d0045486-33a4-4194-9070-d04873e67ae9"
+      }
+    },
+    "owner": "rhayne"
   }
 }

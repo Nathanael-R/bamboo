@@ -28,12 +28,12 @@ const BottomTabs = () => {
         },
         headerTitleStyle: {
           fontWeight: "bold",
-          fontSize: 25,
-          color: "#00D084",
+          fontSize: 15,
+          color: "white",
         },
       }}
     >
-      {/* <Tab.Screen
+      <Tab.Screen
         name={"Home"}
         component={Home}
         options={{
@@ -58,6 +58,9 @@ const BottomTabs = () => {
               color={focused ? "#00D084" : "black"}
             />
           ),
+          headerTitleStyle: {
+            display: 'none'
+          }
         }}
       />
       <Tab.Screen
@@ -72,6 +75,8 @@ const BottomTabs = () => {
               B
             />
           ),
+          headerTitle: "Learn",
+          headerTitleAlign: "center",
         }}
       />
       <Tab.Screen
@@ -86,7 +91,7 @@ const BottomTabs = () => {
             />
           ),
         }}
-      /> */}
+      />
       <Tab.Screen
         name={"Account"}
         component={Account}

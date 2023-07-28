@@ -19,7 +19,6 @@ const Search = () => {
           style={{
             flex: 1,
             paddingVertical: 10,
-            outline: "none",
           }}
           placeholder="Search"
           cursorColor="#00D084"

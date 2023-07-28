@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Image, Pressable, Text, View, useWindowDimensions } from "react-native";
 import {useNavigation} from '@react-navigation/native'
 import { TouchableOpacity } from "react-native";
-const WatchCard = ({item}) => {
+const WatchCard = ({item, Details}) => {
   const navigation = useNavigation()
   const width = useWindowDimensions()
   let screen = width.width - 30

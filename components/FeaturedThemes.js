@@ -17,8 +17,8 @@ export const ThemeScroll = () => {
       showsHorizontalScrollIndicator={false}
     >
       <View style={{ flexDirection: "row" }}>
-        {ThemeCopy.map((item) => (
-          <Item item={item} />
+        {ThemeCopy.map((item, id) => (
+          <Item item={item} key={id}/>
         ))}
       </View>
     </ScrollView>

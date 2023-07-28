@@ -8,9 +8,9 @@ const Invest = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarLabelStyle: { fontSize: 12, color: 'white', fontWeight: 'bold', },
-        tabBarStyle: { backgroundColor:  "#00D084"},
-        tabBarIndicatorStyle: {backgroundColor: 'white'}
+        tabBarLabelStyle: { fontSize: 18, color: "white", textTransform: 'capitalize' },
+        tabBarStyle: { backgroundColor: "#00D084" },
+        tabBarIndicatorStyle: { backgroundColor: "white" },
       }}
     >
       <Tab.Screen name="Stocks" component={Stocks} />

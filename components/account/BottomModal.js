@@ -8,7 +8,7 @@ const BottomModal = ({toggle}) => {
       <View style={{gap: 5}}>
       <Text>NGN Wallet to USD Wallet</Text>
       <Text>USD Wallet to NGN Wallet</Text>
-      <Pressable onPress={toggle}>Close</Pressable>
+      <Pressable onPress={toggle}><Text>Close</Text></Pressable>
       </View>
     </View>
   );

@@ -155,51 +155,6 @@ export const Themes = [
     numReduction: 0.01,
     percentage: 12.22,
   },
-
-  // {
-  //   id: 6,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 7,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 8,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 9,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 10,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 11,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 12,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 13,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 14,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 15,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // },
-  // {
-  //   id: 16,
-  //   desc: 'ndjfvndavjlfnnlk'
-  // }
 ];
 export const ThemeCopy = [
   {
@@ -239,5 +194,51 @@ export const PageArray = [
   },
   {
     id: 4,
+  },
+];
+export const LearnData = [
+  {
+    id: 1,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 2,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 3,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 4,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 5,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 6,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 7,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 8,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 9,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 10,
+    desc: "ndjfvndavjlfnnlk",
+  },
+  {
+    id: 11,
+    desc: "ndjfvndavjlfnnlk",
   },
 ];

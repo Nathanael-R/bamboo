@@ -49,25 +49,25 @@ const WatchList = () => {
         >
           <FlatList
             data={Themes}
-            renderItem={({ item }) => <WatchCard item={item} />}
+            renderItem={({ item }) => <WatchCard item={item} Details={'Details'}/>}
             keyExtractor={(item) => item.id}
             bounces={false}
           />
           <FlatList
             data={Themes}
-            renderItem={({ item }) => <WatchCard item={item} />}
+            renderItem={({ item }) => <WatchCard item={item} Details={'Details'}/>}
             keyExtractor={(item) => item.id}
             bounces={false}
           />
           <FlatList
             data={Themes}
-            renderItem={({ item }) => <WatchCard item={item} />}
+            renderItem={({ item }) => <WatchCard item={item} Details={'Details'}/>}
             keyExtractor={(item) => item.id}
             bounces={false}
           />
           <FlatList
             data={Themes}
-            renderItem={({ item }) => <WatchCard item={item} />}
+            renderItem={({ item }) => <WatchCard item={item} Details={'Details'}/>}
             keyExtractor={(item) => item.id}
             bounces={false}
           />
