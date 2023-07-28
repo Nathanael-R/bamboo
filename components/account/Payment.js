@@ -80,7 +80,7 @@ const Payment = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           borderBottomWidth: .01,
-          borderBottomColor: 'grey',
+          borderBottomColor: 'rgb(248,248,255)',
           marginBottom: 2,
           alignItems: "center",
         }}

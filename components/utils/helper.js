@@ -63,7 +63,6 @@ export const Stocks = [
     percentage: 0.99,
   },
 ];
-
 export const DATA = [
   Math.random() * 100,
   Math.random() * 100,
@@ -96,38 +95,67 @@ export const DATA = [
   Math.random() * 100,
   Math.random() * 100,
 ];
-
 export const Themes = [
   {
     id: 1,
-    title: 'It works',
-    image: require('../../assets/avah.png'),
-    desc: 'ndjfvndavjlfnnlk'
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
   },
+
   {
     id: 2,
-    title: 'It works',
-    image: require('../../assets/avah.png'),
-    desc: 'ndjfvndavjlfnnlk'
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
   },
+
   {
     id: 3,
-    title: 'It works',
-    image: require('../../assets/avah.png'),
-    desc: 'ndjfvndavjlfnnlk'
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
   },
+
   {
     id: 4,
-    title: 'It works',
-    image: require('../../assets/avah.png'),
-    desc: 'ndjfvndavjlfnnlk'
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
   },
+
   {
     id: 5,
-    title: 'It works',
-    image: require('../../assets/avah.png'),
-    desc: 'ndjfvndavjlfnnlk'
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
   },
+
+  {
+    id: 6,
+    name: "AVAH",
+    image: require("../../assets/avah.png"),
+    desc: "Aveanna Healthcare Holdings l...",
+    status: "DOWN",
+    numReduction: 0.01,
+    percentage: 12.22,
+  },
+
   // {
   //   id: 6,
   //   desc: 'ndjfvndavjlfnnlk'
@@ -172,30 +200,44 @@ export const Themes = [
   //   id: 16,
   //   desc: 'ndjfvndavjlfnnlk'
   // }
-]
+];
 export const ThemeCopy = [
   {
     id: 10,
-    desc: 'ndjfvndavjlfnnlk'
+    desc: "ndjfvndavjlfnnlk",
   },
   {
     id: 11,
-    desc: 'ndjfvndavjlfnnlk'
+    desc: "ndjfvndavjlfnnlk",
   },
   {
     id: 12,
-    desc: 'ndjfvndavjlfnnlk'
+    desc: "ndjfvndavjlfnnlk",
   },
   {
     id: 13,
-    desc: 'ndjfvndavjlfnnlk'
+    desc: "ndjfvndavjlfnnlk",
   },
   {
     id: 14,
-    desc: 'ndjfvndavjlfnnlk'
+    desc: "ndjfvndavjlfnnlk",
   },
   {
     id: 15,
-    desc: 'ndjfvndavjlfnnlk'
-  }
-]
+    desc: "ndjfvndavjlfnnlk",
+  },
+];
+export const PageArray = [
+  {
+    id: 1,
+  },
+  {
+    id: 2,
+  },
+  {
+    id: 3,
+  },
+  {
+    id: 4,
+  },
+];

@@ -3,8 +3,8 @@ import HomeChart from "../charts/HomeChart";
 const MonthStock = () => {
   
   return (
-    <View>
-      <Text>Stock of the Month</Text>
+    <View style={{paddingVertical: 10}}>
+      <Text style={{fontWeight: 'bold'}}>Stock of the Month</Text>
       <Text>Check out our freshest pick for the month</Text>
       <HomeChart />
     </View>

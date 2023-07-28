@@ -14,7 +14,7 @@ const Invest = () => {
       }}
     >
       <Tab.Screen name="Stocks" component={Stocks} />
-      <Tab.Screen name="Returns" component={Returns} />
+      <Tab.Screen name="Fixed Returns" component={Returns} />
     </Tab.Navigator>
   );
 };

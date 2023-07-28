@@ -33,7 +33,7 @@ const BottomTabs = () => {
         },
       }}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name={"Home"}
         component={Home}
         options={{
@@ -86,7 +86,7 @@ const BottomTabs = () => {
             />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name={"Account"}
         component={Account}
@@ -109,11 +109,11 @@ const Tabs = () => {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="BottomTabs"
         component={BottomTabs}
         options={{ headerShown: false }}
-      /> */}
+      />
       <Stack.Screen name="Details" component={Details} />
     </Stack.Navigator>
   );

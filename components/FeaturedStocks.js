@@ -1,20 +1,10 @@
 import { Image, Pressable, Text, View } from "react-native";
 import List from "./cards/List"
+import Header from "./topscreen/Header";
 const FeaturedStocks = () => {
   return (
-    <View style={{ paddingTop: 15, paddingRight: 15 }}>
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <Text>Featured Stocks</Text>
-        <Pressable>
-          <Text>See All</Text>
-        </Pressable>
-      </View>
+    <View style={{ paddingVertical: 25, paddingRight: 15 }}>
+      <Header title= 'Featured Stocks'/>
       <List Details={'Details'}/>
     </View>
   );

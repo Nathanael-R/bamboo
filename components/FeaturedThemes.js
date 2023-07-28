@@ -7,6 +7,7 @@ import {
   View,
 } from "react-native";
 import { ThemeCopy } from "./utils/helper";
+import Header from "./topscreen/Header";
 
 export const ThemeScroll = () => {
   return (
@@ -52,18 +53,7 @@ const FeaturedThemes = () => {
   return (
     <View>
       <View style={{ paddingRight: 15 }}>
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
-          <Text>Featured Themes</Text>
-          <Pressable>
-            <Text>See All</Text>
-          </Pressable>
-        </View>
+        <Header title='Featured Themes'/>
         <Text>These are the stocks making the biggest move today</Text>
       </View>
       <ThemeScroll />

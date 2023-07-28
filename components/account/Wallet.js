@@ -1,20 +1,27 @@
 import { View, Text, Pressable } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
+import { BottomSheet } from "react-native-btr";
+import BottomModal from "./BottomModal";
+
 const Wallet = () => {
+  const [sheet, setSheet] = useState(false)
+  function toggleDrawer(){
+    setSheet(!sheet)
+  }
   return (
-    <View >
+    <View style={{paddingBottom: 20}}>
       <View style={{ alignItems: "center", paddingVertical: 20 }}>
-        <Text style={{ fontWeight: "bold" }}>Nathanael</Text>
+        <Text style={{ fontWeight: "bold", fontSize:20 }}>Nathanael</Text>
         <Text style={{ fontWeight: "light" }}>
           USER ID: #NATHANAEL AA56YT7UI8
         </Text>
       </View>
       <View>
         <Text>USD WALLET</Text>
-        <Text style={{ fontWeight: "bold", fontSize: 25 }}>$0.00</Text>
+        <Text style={{ fontWeight: "bold", fontSize: 40 }}>$0.00</Text>
       </View>
-      <View>
+      <Pressable onPress={toggleDrawer}>
         <Ionicons
           name="arrow-up"
           size={24}
@@ -29,25 +36,37 @@ const Wallet = () => {
             alignSelf: "flex-end",
           }}
         />
-      </View>
+      </Pressable>
+      <BottomSheet visible={sheet} onBackButtonPress={toggleDrawer} onBackdropPress={toggleDrawer}>
+        <BottomModal toggle={toggleDrawer}/>
+      </BottomSheet>
       <View>
         <Text>NGN WALLET</Text>
-        <Text style={{ fontWeight: "bold", fontSize: 25 }}>#20</Text>
+        <Text style={{ fontWeight: "bold", fontSize: 40 }}>#20</Text>
       </View>
       <View
         style={{
           flexDirection: "row",
           justifyContent: "space-between",
           paddingVertical: 20,
+          alignItems: 'center'
         }}
       >
         <Pressable
           style={{
             flex: 0.49,
-            backgroundColor: "red",
             alignItems: "center",
-            paddingVertical: 10,
+            paddingVertical: 15,
             borderRadius: 5,
+            shadowColor: "#000000",
+            shadowOffset: {
+              width: 0,
+              height: 3,
+            },
+            shadowOpacity: 0.17,
+            shadowRadius: 3.05,
+            elevation: 4,
+            height: 55
           }}
         >
           <Text>Withdraw</Text>
@@ -57,8 +76,9 @@ const Wallet = () => {
             flex: 0.49,
             backgroundColor: "#00D084",
             alignItems: "center",
-            paddingVertical: 10,
+            paddingVertical: 15,
             borderRadius: 5,
+            height: 50
           }}
         >
           <Text style={{ color: "white" }}>Deposit</Text>

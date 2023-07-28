@@ -1,24 +1,29 @@
-import { View, Text, ScrollView } from "react-native";
 import React from "react";
-import Compare from "./components/Compare";
-import Description from "./components/Description";
-import TitleChart from "./components/TitleChart";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import About from "./screens/About";
+import Financials from "./screens/Financials";
+import Ownership from "./screens/Ownership";
+import News from "./screens/News";
 
-const LowerScreen = () => {
+const Tab = createMaterialTopTabNavigator()
+
+const Details = () => {
   return (
-    <View style={{paddingHorizontal: 15}}>
-      <Compare />
-      <Description />
-    </View>
-  );
-};
-const Details = ({ item }) => {
-  return (
-    <ScrollView style={{ backgroundColor: "white" }}>
-      <TitleChart />
-      <LowerScreen />
-    </ScrollView>
-  );
+    <Tab.Navigator
+      screenOptions={{
+        tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold' },
+        tabBarStyle: { backgroundColor:  "white", borderBottomWidth: 0},
+        headerStyle: {borderBottomColor: 'white'},
+        tabBarIndicatorStyle: {backgroundColor: '#00D084'}
+      }}
+      initialRouteName="About"
+    >
+      <Tab.Screen name="About" component={About} />
+      <Tab.Screen name="Financials" component={Financials} />
+      <Tab.Screen name="Ownership" component={Ownership} />
+      <Tab.Screen name="News" component={News} />
+    </Tab.Navigator>
+  )
 };
 
 export default Details;

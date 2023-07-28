@@ -44,7 +44,7 @@ const HomeChart = () => {
         gridMin={-100}
         gridMax={120}
         start={-100}
-        contentInset={{ top: 70 }}
+        contentInset={{ top: 100 }}
         svg={{ fill: "rgba(57,214,136,0.1)", stroke: "rgb(57,214,136)" }}
       ></AreaChart>
     </View>

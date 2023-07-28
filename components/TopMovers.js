@@ -1,4 +1,5 @@
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import Header from "./topscreen/Header";
 
 const Card = () => {
   return (
@@ -18,7 +19,7 @@ const Card = () => {
         shadowRadius: 3.05,
         elevation: 4,
         marginBottom: 20,
-        marginLeft: 1,
+        marginRight: 15
       }}
     >
       <View
@@ -65,39 +66,29 @@ const Card = () => {
     </View>
   );
 };
-
 const TopMovers = () => {
   return (
     <View
       style={{
         display: "flex",
         gap: 5,
-        paddingTop: 30,
+        paddingVertical: 30,
         paddingRight: 15,
         backgroundColor: "white",
       }}
     >
       <View style={{}}>
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
-          <Text>Top Movers</Text>
-          <Pressable>
-            <Text>See All</Text>
-          </Pressable>
-        </View>
+        <Header title='Top Movers'/>
         <Text>These are the stocks making the biggest move today</Text>
       </View>
       <ScrollView
         horizontal={true}
-        showsHorizontalScrollIndicator={true}
-        pagingEnabled={true}
+        showsHorizontalScrollIndicator={false}
       >
-        <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       </ScrollView>
     </View>
   );

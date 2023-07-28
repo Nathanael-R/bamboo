@@ -1,5 +1,6 @@
 import { Image, Pressable, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import Header from "./topscreen/Header";
 const RecentNews = () => {
   const trim = (str, num) => {
     if (str?.length > num) {
@@ -13,18 +14,7 @@ const RecentNews = () => {
     <View
       style={{ paddingTop: 30, paddingRight: 15, display: "flex", gap: 20 }}
     >
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <Text>Recent News</Text>
-        <Pressable>
-          <Text>See All</Text>
-        </Pressable>
-      </View>
+      <Header title='Recent News'/>
       <View
         style={{
           display: "flex",

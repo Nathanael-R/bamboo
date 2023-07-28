@@ -2,7 +2,7 @@ import { Pressable, Text, View, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 const PrimaryCard = () => {
-  let cardWidth = Dimensions.get("window").width - 50;
+  let cardWidth = Dimensions.get("window").width - 45;
   return (
     <View
       style={{
@@ -12,6 +12,7 @@ const PrimaryCard = () => {
         width: (cardWidth),
         gap: 15,
         borderRadius: 5,
+        marginRight: 15
       }}
     >
       <View
